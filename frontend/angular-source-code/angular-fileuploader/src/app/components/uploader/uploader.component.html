@@ -1,0 +1,10 @@
+<div class="form-group box has-text-centered">
+
+  <h2 class="subtitle">Insert some data here...</h2>
+
+  <p><input type="text" placeholder="title" [(ngModel)]="title"></p>
+  <p><input type="text" placeholder="description" [(ngModel)]="description"></p><br />
+  <h2 class="subtitle">Choose your file...</h2>
+  <input type="file" id="file" (change)="handleFileInput($event.target.files)">
+  <p><a class="button is-rounded is-primary" (click)="uploadFile()">Upload</a></p>
+</div>

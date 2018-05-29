@@ -1,0 +1,6 @@
+@media (min-width: 1025px) {
+   .navbar-menu {display: none;}
+}
+@media (max-width: 1024px) {
+   .tabs {display: none;}
+}

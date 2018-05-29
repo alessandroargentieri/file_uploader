@@ -1,0 +1,24 @@
+<div class="box has-text-centered" id="tabella_utenti">
+  <h3 class="subtitle"><b>Uploaded Files</b></h3>
+
+  <table class="table is-striped" style="margin: 0px auto;">
+    <thead>
+    <tr>
+      <th>TITLE</th>
+      <td>DESCRIPTION</td>
+      <td>PATH</td>
+      <td>CREATION DATE</td>
+      <td>DELETE</td>
+    </tr>
+    </thead>
+    <tbody *ngIf="files">
+      <tr *ngFor="let file of files" id="{{file.id}}">
+        <th>{{file.title}}</th>
+        <td>{{file.description}}</td>
+        <td><a target="_blank" href="http://localhost:8585/open/file?filename={{file.path}}">{{file.path}}</a></td>
+        <td>{{file.creationDate | date: 'dd/MM/yyyy'}}</td>
+        <td><p class='delete' (click)='delete(file.id)'></p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

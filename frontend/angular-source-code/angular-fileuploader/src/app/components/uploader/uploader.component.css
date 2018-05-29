@@ -1,0 +1,22 @@
+
+.box {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width : 40%;
+    heigth: 40%;
+}
+
+input[type='text']{
+    height:35px;
+    width:90%;
+    margin-left:auto;
+    margin-left:auto;
+    margin-top:5px;
+}
+
+input[type='file']{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height:35px;
+}

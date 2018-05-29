@@ -1,0 +1,18 @@
+<div class="tabs">
+  <ul>
+    <li id="uploader_tab" class="tab is-active" routerLink="/uploader"><a  (click)="uploader()">Upload</a></li>
+    <li id="show_tab" class="tab"><a (click)="showFiles()" routerLink="/files">Show</a></li>
+  </ul>
+</div>
+
+
+<button class="button navbar-burger" data-target="navMenu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+<div class="navbar-menu" id="navMenu">
+  <a class="navbar-item" (click)="uploader()" routerLink="/uploader">Upload</a>
+  <a class="navbar-item" (click)="showFiles()" routerLink="/files">Show</a>
+</div>
+
